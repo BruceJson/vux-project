@@ -49,6 +49,14 @@ let routes = [{
 	},
 	component: () =>
 		import ('@/views/pages/personal-info')
+}, {
+	path: '/collect-article',
+	name: '征文详情',
+	meta: {
+		title: '征文详情'
+	},
+	component: () =>
+		import ('@/views/pages/collect-article')
 }, ...detailRoutes, ...submitRoutes];
 
 export default new Router({
